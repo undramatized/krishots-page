@@ -1,0 +1,15 @@
+
+body{
+  background-color: lighten(#000, 10%);
+  color: darken(#fff, 40%);
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  padding: 15px 10px;
+
+}
