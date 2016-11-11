@@ -21,13 +21,15 @@ module.exports = {
 		Flickr.tokenOnly(flickrOptions, function(error, flickr) {
 			// we can now use "flickr" as our API object,
 			// but we can only call public methods and access public data
-			flickr.photos.search({
+			flickr.photosets.getPhotos({
 				user_id: '13770630@N08',
+				photoset_id: '72157672329771974',
 				page: 1,
 				per_page: 500
 			}, function(err, result) {
 				// result is Flickr's response
-				var photos = result.photos.photo;
+				console.log(result);
+				var photos = result.photoset.photo;
 	      photos.forEach(function(photo){
 	        var url = "https://farm"+photo.farm+".staticflickr.com/"+photo.server+"/"+photo.id+"_"+photo.secret+"_"+"m.jpg"
 	        photo.url = url;
