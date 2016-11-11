@@ -34,7 +34,7 @@ module.exports = {
 	        var url = "https://farm"+photo.farm+".staticflickr.com/"+photo.server+"/"+photo.id+"_"+photo.secret+"_"+"h.jpg"
 	        photo.url = url;
 	      })
-				return res.view('main/index', { photos: photos })
+				return res.view('main/index', { title:"Home", photos: photos })
 			});
 		});
   },
