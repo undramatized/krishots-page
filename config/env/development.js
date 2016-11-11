@@ -20,5 +20,7 @@ module.exports = {
   // models: {
   //   connection: 'someMongodbServer'
   // }
+  FLICKR_KEY: '328e26116ec00fce1bf324f54038f9b4',
+  FLICKR_SECRET: 'a5f8174a25adfdb2'
 
 };
