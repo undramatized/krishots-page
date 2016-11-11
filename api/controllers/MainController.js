@@ -31,7 +31,7 @@ module.exports = {
 				console.log(result);
 				var photos = result.photoset.photo;
 	      photos.forEach(function(photo){
-	        var url = "https://farm"+photo.farm+".staticflickr.com/"+photo.server+"/"+photo.id+"_"+photo.secret+"_"+"m.jpg"
+	        var url = "https://farm"+photo.farm+".staticflickr.com/"+photo.server+"/"+photo.id+"_"+photo.secret+"_"+"h.jpg"
 	        photo.url = url;
 	      })
 				return res.view('main/index', { photos: photos })

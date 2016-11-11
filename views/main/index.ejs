@@ -1,7 +1,7 @@
-This is the main page
-<% photos.forEach(function(photo){ %>
-  <div class="photo">
-    <h5><%= photo.title %></h5>
-    <img src=<%= photo.url %> alt="" />
-  </div>
-<% }) %>
+<div id="photo-slider">
+  <% photos.forEach(function(photo){ %>
+    <div class="photo">
+      <img src=<%= photo.url %> alt="" />
+    </div>
+    <% }) %>
+</div>
